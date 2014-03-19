@@ -1,0 +1,73 @@
+BMP GIF JPEG PNG
+
+0. BMP supports up to 24 (16,777,216 colors) bits of color information with 
+8 bits of transparency info.  GIF stores up to 8 bits of color information 
+(256 colors).  JPEG can store color info in 8 bit (greyscale), 12 bit (4,096 
+colors), or 24 bit blocks.  PNG can record up to 32 bits of color 
+information plus transparency info.
+
+1.  Of the four formats listed, only GIF supports animation.
+
+2.  An image file which has been compressed with a lossy algorithm can only
+be reconstructed into an approximation of the original image, however it's
+resultant file can be much smaller than a file loss-lessly compressed.  That
+is to say its compressed code can be reconstructed into exactly the original
+image.
+
+3.  All of the formats specified, save JPEG, use lossless compression.  JPEG
+allows a user to set how lossy its compression algorithm should be.
+
+
+MIT Article
+
+4.  When an operating system 'deletes' a file in a FAT file system, it 
+really just changes the first character of the file itself to a marker char
+signifying its deletion and moves the list of addresses of blocks of memory 
+that file had consisted of into its list of free blocks.
+
+5.  If you don't care about reusing the drive you can physically break it
+or apply a strong magnetic field to all sectors (even functionally 
+necessary ones you don't need to wipe for data security).  If you wish to 
+reuse the drive you can write over the blocks which contained the info you
+wish to delete with ones or zeroes a few times.  The linked article claims 
+this is enough for newer, high track-density drives.  Presumably older 
+drives must be overwritten even more times, or with "Guttman Patterns". 
+
+
+6.  stdint.h defines the width in bits of 8, 16, 32, and sometimes 62 bit 
+signed and unsigned integers and defines the largest and smallest implemen-
+tations in memory of said integers.
+
+7.  Their type can specify in a struct memory offsets for various variables
+for use like variable class declarations in other struct "object" 
+definitions.
+
+8.  Respectively, BYTE, DWORD, LONG, and WORD are 1, 4, 4, and 2 bytes wide.
+ 
+9. BM.
+
+10. bfSize denotes the total size in bytes of the bitmap file, bfSize 
+denotes the size in bytes of the information header.
+
+11. A negative gfHeight means the lines of pixels are stored in the file 
+from top to bottom.
+
+12. biBitCount
+
+13. fopen returns NULL when it fails to open the file in the specified mode
+for any reason.
+
+14. The third argument specifies the number of reads of "size" bytes in this
+read.  We only want to copy one RGBTRIPLE at a time, so we use its width and
+a single read.
+
+15. 3
+
+16. fseek moves a file's (first arg, FILE*) 'seek position' (third arg, int)
+offset (second arg, long int) positions forward.
+
+17. SEEK_CUR is an integer representing the current position of the
+operating system in a file stream,  SEEK_SET represents the beginning of
+that stream.
+
+18. Milo Banana dun it.
